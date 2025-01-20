@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Product Page</title>
+</head>
+<body>
+	<section>
+		<div class="category">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<div class="card">
+					<div class="card-header text-center fs-4">Add Product</div>
+						<div class="card-body">
+							<form>
+								<div class="mb-3">
+									<label>Enter Title</label><input type="text" name="title" type="text" class="form-control">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
