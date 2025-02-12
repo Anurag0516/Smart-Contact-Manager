@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{normal/base::layout(~{::section})}">
 <head>
 <meta charset="ISO-8859-1">
 <title>User Page</title>
@@ -19,6 +19,13 @@
 					</h1>
 					<div class="container text-center">
 						<a th:href="@{/user/add-contact}" class="btn btn-primary text-uppercase mt-4">Add New Contact</a>
+						<hr>
+						<h3 class="my-3">Donate Us</h3>
+						<input id="payment_field" type="text" class="form-control my-2" placeholder="Enter amount here">
+						
+						<div class="container text-center mt-4">
+							<button onclick="paymentStart()" class="btn btn-success btn-block">Checkout</button>
+						</div>
 					</div>
 				</div>
 			</div>
